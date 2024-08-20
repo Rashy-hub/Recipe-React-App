@@ -1,0 +1,420 @@
+{
+  "recipes": [
+    {
+      "id": "1",
+      "title": "Spaghetti Bolognese",
+      "description": "A classic Italian pasta dish with rich meat sauce.",
+      "coverPicture": "https://via.placeholder.com/150?text=Spaghetti+Bolognese",
+      "ingredients": [
+        {
+          "name": "Spaghetti",
+          "quantity": 200
+        },
+        {
+          "name": "Ground beef",
+          "quantity": 300
+        },
+        {
+          "name": "Tomato sauce",
+          "quantity": 250
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Chicken Curry",
+      "description": "A spicy and flavorful chicken curry.",
+      "coverPicture": "https://via.placeholder.com/150?text=Chicken+Curry",
+      "ingredients": [
+        {
+          "name": "Chicken",
+          "quantity": 400
+        },
+        {
+          "name": "Curry powder",
+          "quantity": 50
+        },
+        {
+          "name": "Coconut milk",
+          "quantity": 400
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Vegetable Stir Fry",
+      "description": "A quick and healthy vegetable stir fry.",
+      "coverPicture": "https://via.placeholder.com/150?text=Vegetable+Stir+Fry",
+      "ingredients": [
+        {
+          "name": "Mixed vegetables",
+          "quantity": 300
+        },
+        {
+          "name": "Soy sauce",
+          "quantity": 50
+        },
+        {
+          "name": "Olive oil",
+          "quantity": 30
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Beef Tacos",
+      "description": "Delicious tacos filled with seasoned beef and fresh toppings.",
+      "coverPicture": "https://via.placeholder.com/150?text=Beef+Tacos",
+      "ingredients": [
+        {
+          "name": "Ground beef",
+          "quantity": 300
+        },
+        {
+          "name": "Taco shells",
+          "quantity": 8
+        },
+        {
+          "name": "Shredded cheese",
+          "quantity": 100
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Caesar Salad",
+      "description": "A classic Caesar salad with crisp romaine and a creamy dressing.",
+      "coverPicture": "https://via.placeholder.com/150?text=Caesar+Salad",
+      "ingredients": [
+        {
+          "name": "Romaine lettuce",
+          "quantity": 200
+        },
+        {
+          "name": "Caesar dressing",
+          "quantity": 100
+        },
+        {
+          "name": "Croutons",
+          "quantity": 50
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Chicken Alfredo",
+      "description": "Creamy Alfredo sauce over tender chicken and pasta.",
+      "coverPicture": "https://via.placeholder.com/150?text=Chicken+Alfredo",
+      "ingredients": [
+        {
+          "name": "Chicken breast",
+          "quantity": 300
+        },
+        {
+          "name": "Fettuccine pasta",
+          "quantity": 200
+        },
+        {
+          "name": "Alfredo sauce",
+          "quantity": 250
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Greek Salad",
+      "description": "A refreshing Greek salad with feta and olives.",
+      "coverPicture": "https://via.placeholder.com/150?text=Greek+Salad",
+      "ingredients": [
+        {
+          "name": "Cucumbers",
+          "quantity": 150
+        },
+        {
+          "name": "Tomatoes",
+          "quantity": 150
+        },
+        {
+          "name": "Feta cheese",
+          "quantity": 100
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Margherita Pizza",
+      "description": "A simple pizza with fresh mozzarella and basil.",
+      "coverPicture": "https://via.placeholder.com/150?text=Margherita+Pizza",
+      "ingredients": [
+        {
+          "name": "Pizza dough",
+          "quantity": 1
+        },
+        {
+          "name": "Tomato sauce",
+          "quantity": 100
+        },
+        {
+          "name": "Mozzarella cheese",
+          "quantity": 150
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "title": "Beef Stroganoff",
+      "description": "A rich and creamy beef stroganoff served over noodles.",
+      "coverPicture": "https://via.placeholder.com/150?text=Beef+Stroganoff",
+      "ingredients": [
+        {
+          "name": "Beef sirloin",
+          "quantity": 300
+        },
+        {
+          "name": "Mushrooms",
+          "quantity": 100
+        },
+        {
+          "name": "Sour cream",
+          "quantity": 100
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Tom Yum Soup",
+      "description": "A spicy and sour Thai soup with shrimp.",
+      "coverPicture": "https://via.placeholder.com/150?text=Tom+Yum+Soup",
+      "ingredients": [
+        {
+          "name": "Shrimp",
+          "quantity": 200
+        },
+        {
+          "name": "Tom Yum paste",
+          "quantity": 50
+        },
+        {
+          "name": "Lemongrass",
+          "quantity": 30
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "title": "Pancakes",
+      "description": "Fluffy and delicious pancakes perfect for breakfast.",
+      "coverPicture": "https://via.placeholder.com/150?text=Pancakes",
+      "ingredients": [
+        {
+          "name": "Flour",
+          "quantity": 200
+        },
+        {
+          "name": "Eggs",
+          "quantity": 2
+        },
+        {
+          "name": "Milk",
+          "quantity": 250
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "title": "Lasagna",
+      "description": "Layers of pasta with meat, cheese, and tomato sauce.",
+      "coverPicture": "https://via.placeholder.com/150?text=Lasagna",
+      "ingredients": [
+        {
+          "name": "Lasagna noodles",
+          "quantity": 12
+        },
+        {
+          "name": "Ground beef",
+          "quantity": 300
+        },
+        {
+          "name": "Ricotta cheese",
+          "quantity": 250
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "title": "Chocolate Cake",
+      "description": "A rich and moist chocolate cake.",
+      "coverPicture": "https://via.placeholder.com/150?text=Chocolate+Cake",
+      "ingredients": [
+        {
+          "name": "Flour",
+          "quantity": 200
+        },
+        {
+          "name": "Cocoa powder",
+          "quantity": 100
+        },
+        {
+          "name": "Sugar",
+          "quantity": 200
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "title": "Apple Pie",
+      "description": "A classic apple pie with a flaky crust.",
+      "coverPicture": "https://via.placeholder.com/150?text=Apple+Pie",
+      "ingredients": [
+        {
+          "name": "Apples",
+          "quantity": 500
+        },
+        {
+          "name": "Pie crust",
+          "quantity": 1
+        },
+        {
+          "name": "Sugar",
+          "quantity": 100
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "title": "Quiche Lorraine",
+      "description": "A savory quiche with bacon and cheese.",
+      "coverPicture": "https://via.placeholder.com/150?text=Quiche+Lorraine",
+      "ingredients": [
+        {
+          "name": "Pie crust",
+          "quantity": 1
+        },
+        {
+          "name": "Bacon",
+          "quantity": 150
+        },
+        {
+          "name": "Cheddar cheese",
+          "quantity": 150
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "title": "Shrimp Scampi",
+      "description": "A garlic and butter shrimp dish served with pasta.",
+      "coverPicture": "https://via.placeholder.com/150?text=Shrimp+Scampi",
+      "ingredients": [
+        {
+          "name": "Shrimp",
+          "quantity": 300
+        },
+        {
+          "name": "Garlic",
+          "quantity": 4
+        },
+        {
+          "name": "Butter",
+          "quantity": 100
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "title": "BBQ Ribs",
+      "description": "Tender ribs coated in barbecue sauce.",
+      "coverPicture": "https://via.placeholder.com/150?text=BBQ+Ribs",
+      "ingredients": [
+        {
+          "name": "Pork ribs",
+          "quantity": 500
+        },
+        {
+          "name": "BBQ sauce",
+          "quantity": 200
+        },
+        {
+          "name": "Brown sugar",
+          "quantity": 50
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "title": "Clam Chowder",
+      "description": "A creamy chowder with clams and potatoes.",
+      "coverPicture": "https://via.placeholder.com/150?text=Clam+Chowder",
+      "ingredients": [
+        {
+          "name": "Clams",
+          "quantity": 400
+        },
+        {
+          "name": "Potatoes",
+          "quantity": 300
+        },
+        {
+          "name": "Heavy cream",
+          "quantity": 250
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "title": "Falafel",
+      "description": "Deep-fried chickpea patties served in pita bread.",
+      "coverPicture": "https://via.placeholder.com/150?text=Falafel",
+      "ingredients": [
+        {
+          "name": "Chickpeas",
+          "quantity": 200
+        },
+        {
+          "name": "Tahini",
+          "quantity": 50
+        },
+        {
+          "name": "Cumin",
+          "quantity": 10
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "title": "Moussaka",
+      "description": "A Greek casserole with layers of eggplant, meat, and béchamel sauce.",
+      "coverPicture": "https://via.placeholder.com/150?text=Moussaka",
+      "ingredients": [
+        {
+          "name": "Eggplant",
+          "quantity": 300
+        },
+        {
+          "name": "Ground lamb",
+          "quantity": 300
+        },
+        {
+          "name": "Béchamel sauce",
+          "quantity": 250
+        }
+      ]
+    },
+    {
+      "id": "a98d",
+      "title": "Puree de pomme de terre",
+      "description": "C'est de la merde infernal en boite",
+      "coverPicture": null,
+      "ingredients": [
+        {
+          "name": "patate",
+          "quantity": 2
+        },
+        {
+          "name": "cerise",
+          "quantity": 3
+        }
+      ]
+    }
+  ]
+}

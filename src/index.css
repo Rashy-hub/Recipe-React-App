@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+/* Custom global styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    @apply bg-gray-100 text-gray-800 font-sans;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    height: 100vh;
+}
+
+a {
+    @apply text-blue-600 hover:text-blue-800;
+    text-decoration: none;
+}
+
+ul,
+ol {
+    @apply list-none;
+    padding-left: 0;
+    margin: 0;
+}
+
+img {
+    @apply max-w-full h-auto;
+    display: block;
+}
+@tailwind utilities;
