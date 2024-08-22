@@ -1,9 +1,15 @@
-
+import Explorer from '../components/Explorer'
+import Main from '../containers/Main'
 
 const ExplorerPage = () => {
-  return (
-    <div>ExplorerPage</div>
-  )
+    return (
+        <>
+            <Main>
+                {' '}
+                <Explorer />
+            </Main>
+        </>
+    )
 }
 
 export default ExplorerPage

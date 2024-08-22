@@ -1,9 +1,15 @@
-
+import Register from '../components/Register'
+import Main from '../containers/Main'
 
 const RegisterPage = () => {
-  return (
-    <div>RegisterPage</div>
-  )
+    return (
+        <>
+            <Main>
+                {' '}
+                <Register />
+            </Main>
+        </>
+    )
 }
 
 export default RegisterPage

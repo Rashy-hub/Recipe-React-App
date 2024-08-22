@@ -1,25 +1,55 @@
-// src/components/Login.js
-
-import  { useState } from 'react';
-import { account } from '../config/appWrite'; // Ensure this path is correct
+import { useState, useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
+import { useDispatch, useSelector } from 'react-redux'
+import { checkAuth, loginUser } from '../logic/authAppWrite/authSlice'
 
 const Login = () => {
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-    const [error, setError] = useState('');
+    const [email, setEmail] = useState('roberto@gmail.com')
+    const [password, setPassword] = useState('Test123+')
+    const [error, setError] = useState('')
+
+    const dispatch = useDispatch()
+    const navigate = useNavigate()
+    const { session, isCheckingAuth, sessionIsActive } = useSelector(
+        (state) => state.auth
+    )
+
+    useEffect(() => {
+        const goToDashPage = () => navigate('/myrecipes')
+        if (!isCheckingAuth) {
+            if (sessionIsActive) {
+                console.log(
+                    'User logged in detected, redirecting to /myrecipes'
+                )
+                goToDashPage()
+            } else if (sessionIsActive === null) {
+                console.log('Session state is null, dispatching checkAuth')
+                dispatch(checkAuth())
+            }
+        }
+    }, [dispatch, navigate, isCheckingAuth, sessionIsActive])
 
     const handleSubmit = async (e) => {
-        e.preventDefault();
-        try {
-            await account.createSession(email, password);
-            // Redirect or update state upon successful login
-        } catch (err) {
-            setError('Failed to login: ' + err.message);
+        const goToDashPage = () => navigate('/myrecipes')
+        e.preventDefault()
+        if (session) {
+            setError('You are already logged in.')
+            return
         }
-    };
+        try {
+            await dispatch(loginUser({ email, password })).unwrap()
+            console.log('User logged in, redirecting to /myrecipes')
+            goToDashPage()
+        } catch (err) {
+            setError('Failed to login: ' + err.message)
+        }
+    }
 
     return (
-        <form onSubmit={handleSubmit} className="max-w-md mx-auto p-4 bg-white shadow-md rounded">
+        <form
+            onSubmit={handleSubmit}
+            className="max-w-md mx-auto p-4 bg-white shadow-md rounded mt-32"
+        >
             <h2 className="text-xl font-bold mb-4">Login</h2>
             <div className="mb-4">
                 <label className="block text-sm font-medium mb-2">Email:</label>
@@ -32,7 +62,9 @@ const Login = () => {
                 />
             </div>
             <div className="mb-4">
-                <label className="block text-sm font-medium mb-2">Password:</label>
+                <label className="block text-sm font-medium mb-2">
+                    Password:
+                </label>
                 <input
                     type="password"
                     value={password}
@@ -49,7 +81,7 @@ const Login = () => {
                 Login
             </button>
         </form>
-    );
-};
+    )
+}
 
-export default Login;
+export default Login

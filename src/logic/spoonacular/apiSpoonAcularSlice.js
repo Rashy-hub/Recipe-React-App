@@ -1,43 +1,40 @@
 // src/features/api/apiSlice.js
-import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
+import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 
-const spoonacularApiKey = "b8d7630a6dac4952afe23934ed8b0b59"; // Votre clé API Spoonacular
+const spoonacularApiKey = 'b8d7630a6dac4952afe23934ed8b0b59' // Votre clé API Spoonacular
 
 export const apiSlice = createApi({
-  reducerPath: 'api',
-  baseQuery: fetchBaseQuery({
-    baseUrl: 'https://api.spoonacular.com',
-    prepareHeaders: (headers) => {
-      headers.set('Content-Type', 'application/json');
-      return headers;
-    },
-  }),
-  tagTypes: ['Recipes'],
-  endpoints: (builder) => ({
-    getRecipes: builder.query({
-      query: (queryParams) => ({
-        url: `/recipes/complexSearch`,
-        method: 'GET',
-        params: {
-          ...queryParams,
-          apiKey: spoonacularApiKey,
+    reducerPath: 'api',
+    baseQuery: fetchBaseQuery({
+        baseUrl: 'https://api.spoonacular.com',
+        prepareHeaders: (headers) => {
+            headers.set('Content-Type', 'application/json')
+            return headers
         },
-      }),
-      transformResponse: (response) => response.results || [],
-      providesTags: ['Recipes'],
     }),
-    getRecipeById: builder.query({
-      query: (id) => ({
-        url: `/recipes/${id}/information`,
-        params: { apiKey: spoonacularApiKey },
-      }),
-      providesTags: (result, error, id) => [{ type: 'Recipes', id }],
+    tagTypes: ['Recipes'],
+    endpoints: (builder) => ({
+        getRecipes: builder.query({
+            query: (queryParams) => ({
+                url: `/recipes/complexSearch`,
+                method: 'GET',
+                params: {
+                    ...queryParams,
+                    apiKey: spoonacularApiKey,
+                },
+            }),
+            transformResponse: (response) => response.results || [],
+            providesTags: ['Recipes'],
+        }),
+        getRecipeById: builder.query({
+            query: (id) => ({
+                url: `/recipes/${id}/information`,
+                params: { apiKey: spoonacularApiKey },
+            }),
+            providesTags: (result, error, id) => [{ type: 'Recipes', id }],
+        }),
+        // Ajoutez plus d'endpoints si nécessaire
     }),
-    // Ajoutez plus d'endpoints si nécessaire
-  }),
-});
+})
 
-export const {
-  useGetRecipesQuery,
-  useGetRecipeByIdQuery,
-} = apiSlice;
+export const { useGetRecipesQuery, useGetRecipeByIdQuery } = apiSlice

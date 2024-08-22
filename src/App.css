@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap');
 body {
     @apply bg-gray-100 text-gray-800 font-sans;
     margin: 0;
     padding-bottom: 80px; /* To make room for the footer */
 }
-
+h1 {
+    font-family: 'Bungee Tint';
+}
 header,
 footer {
     @apply bg-blue-600 text-white;
