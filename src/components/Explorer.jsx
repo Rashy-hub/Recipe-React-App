@@ -4,9 +4,9 @@ import SearchBar from './SearchBar'
 import { account, databases } from '../config/appWrite'
 
 const Explorer = () => {
-    const [searchQuery, setSearchQuery] = useState('') 
+    const [searchQuery, setSearchQuery] = useState('') // Default search query
     const { data, error, isLoading } = useGetRecipesQuery({
-        number: 12, /
+        number: 12, // Requesting 12 recipes
         query: searchQuery,
         addRecipeInformation: true,
     })
@@ -17,7 +17,7 @@ const Explorer = () => {
 
     const addRecipeToMyRecipes = async (recipe) => {
         try {
-            const userId = (await account.get()).$id 
+            const userId = (await account.get()).$id
             await databases.createDocument(
                 '66bffdcb002683b1c240',
                 '66bffddc000b0cc2fc13',
@@ -26,8 +26,8 @@ const Explorer = () => {
                     title: recipe.title,
                     image: recipe.image,
                     summary: recipe.summary,
-                    
-                    userId: userId, 
+
+                    userId: userId,
                 }
             )
             alert('Recipe added to your collection!')
