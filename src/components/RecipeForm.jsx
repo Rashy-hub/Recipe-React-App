@@ -94,7 +94,6 @@ const RecipeForm = ({ setRecipes, recipes }) => {
                 documentData
             )
 
-            // Add the new recipe to the list of recipes and update state
             setRecipes([...recipes, { ...newRecipe, servings: 1 }])
             alert('Recette créée avec succès !')
         } catch (error) {

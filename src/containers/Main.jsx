@@ -7,7 +7,6 @@ const Main = ({ children }) => {
     )
 }
 
-// Validate the `children` prop
 Main.propTypes = {
     children: PropTypes.node.isRequired,
 }

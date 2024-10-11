@@ -12,7 +12,6 @@ const DashboardPage = () => {
         setIsFormVisible(!isFormVisible)
     }
 
-    // Fetch recipes in DashboardPage and pass them down
     useEffect(() => {
         const fetchRecipes = async () => {
             try {
@@ -20,11 +19,11 @@ const DashboardPage = () => {
                     '66bffdcb002683b1c240',
                     '66bffddc000b0cc2fc13'
                 )
-                // Initialize servings state for each recipe
+
                 const recipesWithServings = response.documents.map(
                     (recipe) => ({
                         ...recipe,
-                        servings: 1, // default serving size is 1
+                        servings: 1,
                     })
                 )
                 setRecipes(recipesWithServings)

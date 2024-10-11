@@ -2,7 +2,7 @@
 body {
     @apply bg-gray-100 text-gray-800 font-sans;
     margin: 0;
-    padding-bottom: 80px; /* To make room for the footer */
+    padding-bottom: 80px;
 }
 h1 {
     font-family: 'Bungee Tint';

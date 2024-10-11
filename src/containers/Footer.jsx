@@ -14,10 +14,8 @@ const Footer = ({ title }) => {
     )
 }
 
-// Restrictions sur les props
 Footer.propTypes = {
     title: PropTypes.string.isRequired,
 }
 
 export default Footer
-//adding a comment

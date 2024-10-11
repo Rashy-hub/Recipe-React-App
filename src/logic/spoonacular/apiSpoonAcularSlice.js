@@ -1,8 +1,7 @@
 // src/features/api/apiSlice.js
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 
-const spoonacularApiKey = 'b8d7630a6dac4952afe23934ed8b0b59' // Votre clé API Spoonacular
-
+const spoonacularApiKey = 'b8d7630a6dac4952afe23934ed8b0b59'
 export const apiSlice = createApi({
     reducerPath: 'api',
     baseQuery: fetchBaseQuery({
@@ -33,7 +32,6 @@ export const apiSlice = createApi({
             }),
             providesTags: (result, error, id) => [{ type: 'Recipes', id }],
         }),
-        // Ajoutez plus d'endpoints si nécessaire
     }),
 })
 

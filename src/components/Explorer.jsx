@@ -1,14 +1,14 @@
 import { useState } from 'react'
 import { useGetRecipesQuery } from '../logic/spoonacular/apiSpoonAcularSlice'
 import SearchBar from './SearchBar'
-import { account, databases } from '../config/appWrite' // Ensure you import Appwrite SDK
+import { account, databases } from '../config/appWrite'
 
 const Explorer = () => {
-    const [searchQuery, setSearchQuery] = useState('') // Default search query
+    const [searchQuery, setSearchQuery] = useState('') 
     const { data, error, isLoading } = useGetRecipesQuery({
-        number: 12, // Requesting 10 recipes
+        number: 12, /
         query: searchQuery,
-        addRecipeInformation: true, // Fetch additional information
+        addRecipeInformation: true,
     })
 
     const handleSearch = (query) => {
@@ -17,7 +17,7 @@ const Explorer = () => {
 
     const addRecipeToMyRecipes = async (recipe) => {
         try {
-            const userId = (await account.get()).$id // Get the current user's ID
+            const userId = (await account.get()).$id 
             await databases.createDocument(
                 '66bffdcb002683b1c240',
                 '66bffddc000b0cc2fc13',
@@ -26,8 +26,8 @@ const Explorer = () => {
                     title: recipe.title,
                     image: recipe.image,
                     summary: recipe.summary,
-                    // Include any other fields you want to save
-                    userId: userId, // Link to the user
+                    
+                    userId: userId, 
                 }
             )
             alert('Recipe added to your collection!')

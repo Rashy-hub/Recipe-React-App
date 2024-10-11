@@ -16,7 +16,7 @@ const Register = () => {
         e.preventDefault()
         try {
             await dispatch(registerUser({ email, password, name })).unwrap()
-            // Redirect to the dashboard after successful registration
+
             navigate('/myrecipes')
         } catch (err) {
             setError('Failed to register: ' + err.message)

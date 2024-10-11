@@ -3,7 +3,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 import { account } from '../../config/appWrite'
 
-// Thunk to check if user is authenticated
 export const checkAuth = createAsyncThunk(
     'auth/checkAuth',
     async (_, { rejectWithValue }) => {
@@ -19,7 +18,6 @@ export const checkAuth = createAsyncThunk(
     }
 )
 
-// Async thunk for logging in the user
 export const loginUser = createAsyncThunk(
     'auth/loginUser',
     async ({ email, password }) => {
@@ -34,8 +32,6 @@ export const loginUser = createAsyncThunk(
         }
     }
 )
-
-// Async thunk for registering a new user
 export const registerUser = createAsyncThunk(
     'auth/registerUser',
     async ({ email, password, name }) => {
@@ -48,7 +44,6 @@ export const registerUser = createAsyncThunk(
     }
 )
 
-// Async thunk for logging out the user
 export const logoutUser = createAsyncThunk('auth/logoutUser', async () => {
     try {
         await account.deleteSession('current')

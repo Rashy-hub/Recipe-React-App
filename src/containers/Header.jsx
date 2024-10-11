@@ -23,7 +23,6 @@ const Header = ({ title }) => {
     )
 }
 
-// Restrictions sur les props
 Header.propTypes = {
     title: PropTypes.string.isRequired,
 }

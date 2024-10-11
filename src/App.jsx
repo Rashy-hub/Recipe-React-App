@@ -33,7 +33,6 @@ function App() {
         )
     }
 
-    // Redirection automatique si une session est active
     if (user) {
         return <Navigate to="/myrecipes" />
     }
