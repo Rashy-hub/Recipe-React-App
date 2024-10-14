@@ -1,6 +1,6 @@
 # Recipe Dream
 
-![Live Preview on Render](https://recipe-react-app-va6l.onrender.com/)
+[Live Preview on Render](https://recipe-react-app-va6l.onrender.com/)
 
 ## Overview
 
