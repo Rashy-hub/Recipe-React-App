@@ -4,7 +4,7 @@
 
 ## Overview
 
-**Recipe Dream** is a web application built with React that allows users to explore, create, and manage their favorite recipes. This app leverages the Appwrite backend for user authentication and data management, and integrates the Spoonacular Public API to fetch a wide variety of recipes and culinary information.
+**Recipe Dream** is a web application built with React that allows users to explore, create, and manage their favorite recipes. This app leverages the Appwrite backend (BAAS) for user authentication and data management, and integrates the Spoonacular Public API to fetch a wide variety of recipes and culinary information.
 
 ## Features
 
@@ -22,7 +22,7 @@
     -   React Router (for routing)
     -   Tailwind CSS (for styling)
 -   **Backend:**
-    -   Appwrite (for user authentication and database)
+    -   Appwrite backend as a service (for user authentication and database)
     -   Spoonacular Public API (for fetching recipes)
 -   **Development Tools:**
     -   Vite (build tool)
